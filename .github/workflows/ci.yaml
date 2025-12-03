@@ -198,6 +198,14 @@ jobs:
           git diff --exit-code
         working-directory: repos/core/
 
+      # refer to `moonbitlang/x` CI
+      - name: moon info for `moonbitlang/x`
+        run: | 
+          moon info
+          git diff --exit-code
+        working-directory: repos/x/
+
+      # refer to `moonbitlang/async` CI
       - name: moon info for `moonbitlang/async`
         run: |
           moon info --target native
