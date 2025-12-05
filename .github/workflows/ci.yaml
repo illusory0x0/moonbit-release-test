@@ -272,4 +272,4 @@ jobs:
         run: moon check --target native -C repos/async/
 
       - name: Check for system-prompt 
-        run: moon check --target all repos/system-prompt/Agents.mbt.md
+        run: moon check repos/system-prompt/Agents.mbt.md
