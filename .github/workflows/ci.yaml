@@ -270,3 +270,6 @@ jobs:
       - name: Check for moonbitlang/async 
         if: ${{ matrix.os.name != 'windows-latest' }}
         run: moon check --target native -C repos/async/
+
+      - name: Check for system-prompt 
+        run: moon check --target all repos/system-prompt/Agents.mbt.md
